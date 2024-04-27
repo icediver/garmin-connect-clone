@@ -1,0 +1,1913 @@
+@font-face {
+  font-family: 'connect-icons';
+  src: url('../fonts/garmin.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon"],[class*=" icon"] {
+    font-family: "connect-icons";
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
+    text-decoration: inherit;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+h1 [class*="icon-"],.h1 [class*="icon-"],h2 [class*="icon-"],.h2 [class*="icon-"],h3 [class*="icon-"],.h3 [class*="icon-"],h4 [class*="icon-"],.h4 [class*="icon-"],h5 [class*="icon-"],.h5 [class*="icon-"],h6 [class*="icon-"],.h6 [class*="icon-"] {
+    line-height: inherit
+}
+
+
+h1 [class*="icon-"],.h1 [class*="icon-"] {
+    height: 44px;
+    width: 44px
+}
+
+h2 [class*="icon-"],.h2 [class*="icon-"] {
+    height: 33px;
+    width: 33px
+}
+
+.activity-type-icon {
+  display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-top: -4px;
+    margin-right: 11px;
+    font-size: 35px;
+    box-shadow: 0 0 0 2px #ccc;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fbfbfb;
+    color: #6c6c6c;
+}
+
+.icon-abnormal-hr-alert:before {
+    content: "\f101"
+}
+
+.icon-activities-wheelchair:before {
+    content: "\f102"
+}
+
+.icon-activities:before {
+    content: "\e002"
+}
+
+.icon-activity-american-football:before {
+    content: "\f103"
+}
+
+.icon-activity-archery:before {
+    content: "\f104"
+}
+
+.icon-activity-atv:before {
+    content: "\f105"
+}
+
+.icon-activity-auto-racing:before {
+    content: "\f106"
+}
+
+.icon-activity-backcountry-skiing:before {
+    content: "\f107"
+}
+
+.icon-activity-backcountry-snowboarding:before {
+    content: "\f108"
+}
+
+.icon-activity-badminton:before {
+    content: "\f109"
+}
+
+.icon-activity-baseball:before {
+    content: "\f10a"
+}
+
+.icon-activity-basketball:before {
+    content: "\f10b"
+}
+
+.icon-activity-bmx:before {
+    content: "\f10c"
+}
+
+.icon-activity-boating:before {
+    content: "\f10d"
+}
+
+.icon-activity-bouldering-wheelchair:before {
+    content: "\f10e"
+}
+
+.icon-activity-bouldering:before {
+    content: "\f10f"
+}
+
+.icon-activity-boxing:before {
+    content: "\f110"
+}
+
+.icon-activity-breathwork:before {
+    content: "\f111"
+}
+
+.icon-activity-cardio-wheelchair:before {
+    content: "\f112"
+}
+
+.icon-activity-cardio:before {
+    content: "\f113"
+}
+
+.icon-activity-climbing:before {
+    content: "\e626"
+}
+
+.icon-activity-cricket:before {
+    content: "\f114"
+}
+
+.icon-activity-cross-country-skiing-wheelchair:before {
+    content: "\f115"
+}
+
+.icon-activity-cross-country-skiing:before {
+    content: "\f116"
+}
+
+.icon-activity-crosscountry-skiing-snowboarding-wheelchair:before {
+    content: "\f117"
+}
+
+.icon-activity-crosscountry-skiing-snowboarding:before {
+    content: "\f118"
+}
+
+.icon-activity-cycling:before {
+    content: "\42"
+}
+
+.icon-activity-cyclocross:before {
+    content: "\f119"
+}
+
+.icon-activity-dance:before {
+    content: "\f11a"
+}
+
+.icon-activity-disc-golf:before {
+    content: "\f11b"
+}
+
+.icon-activity-diving-apnea-hunt:before {
+    content: "\f11c"
+}
+
+.icon-activity-diving-apnea:before {
+    content: "\f11d"
+}
+
+.icon-activity-diving-ccr:before {
+    content: "\f11e"
+}
+
+.icon-activity-diving-gauge:before {
+    content: "\f11f"
+}
+
+.icon-activity-diving-multi-gas:before {
+    content: "\f120"
+}
+
+.icon-activity-diving-single-gas:before {
+    content: "\f121"
+}
+
+.icon-activity-diving:before {
+    content: "\f122"
+}
+
+.icon-activity-downhill-biking:before {
+    content: "\f123"
+}
+
+.icon-activity-driving:before {
+    content: "\f124"
+}
+
+.icon-activity-e-biking:before {
+    content: "\f125"
+}
+
+.icon-activity-e-mountain-biking:before {
+    content: "\f126"
+}
+
+.icon-activity-elliptical:before {
+    content: "\e90f"
+}
+
+.icon-activity-emergency-border:before {
+    content: "\f127"
+}
+
+.icon-activity-emergency:before {
+    content: "\f128"
+}
+
+.icon-activity-esports:before {
+    content: "\f129"
+}
+
+.icon-activity-field-hockey:before {
+    content: "\f12a"
+}
+
+.icon-activity-fishing:before {
+    content: "\f12b"
+}
+
+.icon-activity-fitness-equipment:before {
+    content: "\23"
+}
+
+.icon-activity-floor-climbing:before {
+    content: "\f12c"
+}
+
+.icon-activity-flying:before {
+    content: "\f12d"
+}
+
+.icon-activity-golf-wheelchair:before {
+    content: "\f12e"
+}
+
+.icon-activity-golf:before {
+    content: "\e61c"
+}
+
+.icon-activity-gravel-cycling:before {
+    content: "\f12f"
+}
+
+.icon-activity-hand-cycling:before {
+    content: "\f130"
+}
+
+.icon-activity-hiit-wheelchair:before {
+    content: "\f131"
+}
+
+.icon-activity-hiit:before {
+    content: "\f132"
+}
+
+.icon-activity-hiking:before {
+    content: "\48"
+}
+
+.icon-activity-horseback:before {
+    content: "\f133"
+}
+
+.icon-activity-hunt:before {
+    content: "\f134"
+}
+
+.icon-activity-ice-hockey:before {
+    content: "\f135"
+}
+
+.icon-activity-indoor-climbing-wheelchair:before {
+    content: "\f136"
+}
+
+.icon-activity-indoor-climbing:before {
+    content: "\f137"
+}
+
+.icon-activity-indoor-cycling:before {
+    content: "\f138"
+}
+
+.icon-activity-indoor-hand-cycling:before {
+    content: "\f139"
+}
+
+.icon-activity-indoor-rowing:before {
+    content: "\f13a"
+}
+
+.icon-activity-indoor-running:before {
+    content: "\f13b"
+}
+
+.icon-activity-indoor-wheelchair-push-run:before {
+    content: "\f13c"
+}
+
+.icon-activity-indoor-wheelchair-push-walk:before {
+    content: "\f13d"
+}
+
+.icon-activity-jump-rope:before {
+    content: "\f13e"
+}
+
+.icon-activity-kayaking:before {
+    content: "\f13f"
+}
+
+.icon-activity-kiteboarding:before {
+    content: "\f140"
+}
+
+.icon-activity-lacrosse:before {
+    content: "\f141"
+}
+
+.icon-activity-marine:before {
+    content: "\e912"
+}
+
+.icon-activity-meditation:before {
+    content: "\f142"
+}
+
+.icon-activity-mixed-martial-arts:before {
+    content: "\f143"
+}
+
+.icon-activity-motocross:before {
+    content: "\f144"
+}
+
+.icon-activity-motorcycling:before {
+    content: "\f145"
+}
+
+.icon-activity-mountain-biking:before {
+    content: "\f146"
+}
+
+.icon-activity-multisport-people:before {
+    content: "\e62b"
+}
+
+.icon-activity-multisport:before {
+    content: "\e00b"
+}
+
+.icon-activity-obstacle-run:before {
+    content: "\f147"
+}
+
+.icon-activity-offshore-grinding:before {
+    content: "\f148"
+}
+
+.icon-activity-onshore-grinding-wheelchair:before {
+    content: "\f149"
+}
+
+.icon-activity-onshore-grinding:before {
+    content: "\f14a"
+}
+
+.icon-activity-open-water-swimming:before {
+    content: "\f14b"
+}
+
+.icon-activity-other-wheelchair:before {
+    content: "\f14c"
+}
+
+.icon-activity-other:before {
+    content: "\2022"
+}
+
+.icon-activity-overland:before {
+    content: "\f14d"
+}
+
+.icon-activity-padel:before {
+    content: "\f14e"
+}
+
+.icon-activity-para-sports:before {
+    content: "\f14f"
+}
+
+.icon-activity-pickleball:before {
+    content: "\f150"
+}
+
+.icon-activity-pilates-wheelchair:before {
+    content: "\f151"
+}
+
+.icon-activity-pilates:before {
+    content: "\f152"
+}
+
+.icon-activity-platform-tennis:before {
+    content: "\f153"
+}
+
+.icon-activity-racket-sports:before {
+    content: "\f154"
+}
+
+.icon-activity-racquetball:before {
+    content: "\f155"
+}
+
+.icon-activity-resort-skiing-wheelchair:before {
+    content: "\f156"
+}
+
+.icon-activity-resort-skiing:before {
+    content: "\f157"
+}
+
+.icon-activity-resort-snowboarding:before {
+    content: "\f158"
+}
+
+.icon-activity-rowing:before {
+    content: "\f159"
+}
+
+.icon-activity-rugby:before {
+    content: "\f15a"
+}
+
+.icon-activity-running:before {
+    content: "\52"
+}
+
+.icon-activity-safety:before {
+    content: "\f15b"
+}
+
+.icon-activity-sailing:before {
+    content: "\f15c"
+}
+
+.icon-activity-skate-skiing:before {
+    content: "\f15d"
+}
+
+.icon-activity-skating:before {
+    content: "\f15e"
+}
+
+.icon-activity-snorkeling:before {
+    content: "\f15f"
+}
+
+.icon-activity-snow-shoeing:before {
+    content: "\f160"
+}
+
+.icon-activity-snowmobiling:before {
+    content: "\f161"
+}
+
+.icon-activity-soccer:before {
+    content: "\f162"
+}
+
+.icon-activity-softball:before {
+    content: "\f163"
+}
+
+.icon-activity-squash:before {
+    content: "\f164"
+}
+
+.icon-activity-stair-stepper:before {
+    content: "\f165"
+}
+
+.icon-activity-stand-up-paddleboarding-wheelchair:before {
+    content: "\f166"
+}
+
+.icon-activity-stand-up-paddleboarding:before {
+    content: "\f167"
+}
+
+.icon-activity-strength-training-wheelchair:before {
+    content: "\f168"
+}
+
+.icon-activity-strength-training:before {
+    content: "\f169"
+}
+
+.icon-activity-surfing:before {
+    content: "\f16a"
+}
+
+.icon-activity-swimming:before {
+    content: "\53"
+}
+
+.icon-activity-table-tennis:before {
+    content: "\f16b"
+}
+
+.icon-activity-team-sports:before {
+    content: "\f16c"
+}
+
+.icon-activity-tennis:before {
+    content: "\f16d"
+}
+
+.icon-activity-track-cycling:before {
+    content: "\f16e"
+}
+
+.icon-activity-track-running:before {
+    content: "\f16f"
+}
+
+.icon-activity-trail-running:before {
+    content: "\f170"
+}
+
+.icon-activity-transition:before {
+    content: "\27fc"
+}
+
+.icon-activity-treadmill-running:before {
+    content: "\f171"
+}
+
+.icon-activity-ultimate-disc:before {
+    content: "\f172"
+}
+
+.icon-activity-ultra-run:before {
+    content: "\f173"
+}
+
+.icon-activity-uncategorized:before {
+    content: "\e029"
+}
+
+.icon-activity-upload:before {
+    content: "\e63d"
+}
+
+.icon-activity-virtual-running:before {
+    content: "\f174"
+}
+
+.icon-activity-volleyball:before {
+    content: "\f175"
+}
+
+.icon-activity-wakeboarding:before {
+    content: "\f176"
+}
+
+.icon-activity-wakesurfing:before {
+    content: "\f177"
+}
+
+.icon-activity-walking:before {
+    content: "\57"
+}
+
+.icon-activity-water-sports:before {
+    content: "\f178"
+}
+
+.icon-activity-water-tubing:before {
+    content: "\f179"
+}
+
+.icon-activity-waterskiing:before {
+    content: "\f17a"
+}
+
+.icon-activity-wheelchair-push-run:before {
+    content: "\f17b"
+}
+
+.icon-activity-wheelchair-push-walk:before {
+    content: "\f17c"
+}
+
+.icon-activity-whitewater-rafting:before {
+    content: "\f17d"
+}
+
+.icon-activity-windsurfing:before {
+    content: "\f17e"
+}
+
+.icon-activity-winter-sports:before {
+    content: "\f17f"
+}
+
+.icon-activity-yoga-wheelchair:before {
+    content: "\f180"
+}
+
+.icon-activity-yoga:before {
+    content: "\f181"
+}
+
+.icon-acute-load:before {
+    content: "\f182"
+}
+
+.icon-add-climb-marker:before {
+    content: "\f183"
+}
+
+.icon-add-photo:before {
+    content: "\f184"
+}
+
+.icon-add-secondary-stats:before {
+    content: "\f185"
+}
+
+.icon-add:before {
+    content: "\e005"
+}
+
+.icon-add2:before {
+    content: "\f186"
+}
+
+.icon-aero-aero:before {
+    content: "\f187"
+}
+
+.icon-aero-lowered:before {
+    content: "\f188"
+}
+
+.icon-aero-upright:before {
+    content: "\f189"
+}
+
+.icon-afternoon:before {
+    content: "\e608"
+}
+
+.icon-alarm-clock:before {
+    content: "\e02e"
+}
+
+.icon-altitude-acclimation:before {
+    content: "\f18a"
+}
+
+.icon-ant-inverse:before {
+    content: "\e90c"
+}
+
+.icon-ant:before {
+    content: "\e90d"
+}
+
+.icon-arrow-direction-down:before {
+    content: "\f18b"
+}
+
+.icon-arrow-direction-right:before {
+    content: "\f18c"
+}
+
+.icon-arrow-direction-up:before {
+    content: "\f18d"
+}
+
+.icon-arrow-down:before {
+    content: "\e028"
+}
+
+.icon-arrow-left:before {
+    content: "\e01a"
+}
+
+.icon-arrow-right:before {
+    content: "\e019"
+}
+
+.icon-arrow-up:before {
+    content: "\e606"
+}
+
+.icon-article:before {
+    content: "\f18e"
+}
+
+.icon-audio-mic:before {
+    content: "\f18f"
+}
+
+.icon-audio-pause:before {
+    content: "\f190"
+}
+
+.icon-audio-play:before {
+    content: "\f191"
+}
+
+.icon-audio-stop:before {
+    content: "\f192"
+}
+
+.icon-audio-waveform:before {
+    content: "\f193"
+}
+
+.icon-badges-new:before {
+    content: "\f194"
+}
+
+.icon-badges:before {
+    content: "\e00d"
+}
+
+.icon-battery-low:before {
+    content: "\e026"
+}
+
+.icon-battery-status-00:before {
+    content: "\f195"
+}
+
+.icon-battery-status-100:before {
+    content: "\f196"
+}
+
+.icon-battery-status-25:before {
+    content: "\f197"
+}
+
+.icon-battery-status-50:before {
+    content: "\f198"
+}
+
+.icon-battery-status-75:before {
+    content: "\f199"
+}
+
+.icon-battery-status:before {
+    content: "\e638"
+}
+
+.icon-bike:before {
+    content: "\e623"
+}
+
+.icon-block:before {
+    content: "\f19a"
+}
+
+.icon-blood-pressure:before {
+    content: "\f19b"
+}
+
+.icon-bluetooth:before {
+    content: "\e903"
+}
+
+.icon-body-battery:before {
+    content: "\f19c"
+}
+
+.icon-body-battery2:before {
+    content: "\f19d"
+}
+
+.icon-body-fat-percentage:before {
+    content: "\e634"
+}
+
+.icon-body-mass-index:before {
+    content: "\e633"
+}
+
+.icon-bone-mass:before {
+    content: "\e635"
+}
+
+.icon-bookmark-trail:before {
+    content: "\f19e"
+}
+
+.icon-bookmarked-trail-filled:before {
+    content: "\f19f"
+}
+
+.icon-calendar:before {
+    content: "\e00e"
+}
+
+.icon-calories_flat:before {
+    content: "\f1a0"
+}
+
+.icon-calories:before {
+    content: "\e60a"
+}
+
+.icon-caution:before {
+    content: "\e02a"
+}
+
+.icon-challenges:before {
+    content: "\e010"
+}
+
+.icon-checkmark-small:before {
+    content: "\f1a1"
+}
+
+.icon-checkmark:before {
+    content: "\2714"
+}
+
+.icon-climb-marker-hover:before {
+    content: "\f1a2"
+}
+
+.icon-climb-marker:before {
+    content: "\f1a3"
+}
+
+.icon-climbs-next:before {
+    content: "\f1a4"
+}
+
+.icon-climbs-previous:before {
+    content: "\f1a5"
+}
+
+.icon-clock:before {
+    content: "\f1a6"
+}
+
+.icon-close-circle:before {
+    content: "\f1a7"
+}
+
+.icon-close:before {
+    content: "\e01d"
+}
+
+.icon-coffee:before {
+    content: "\e02d"
+}
+
+.icon-compose-message:before {
+    content: "\f1a8"
+}
+
+.icon-computer-desktop:before {
+    content: "\e62d"
+}
+
+.icon-computer-laptop:before {
+    content: "\e62e"
+}
+
+.icon-connect-iq:before {
+    content: "\e627"
+}
+
+.icon-control-icon-4g-lte-control:before {
+    content: "\f1a9"
+}
+
+.icon-control-icon-airplane:before {
+    content: "\f1aa"
+}
+
+.icon-control-icon-alarm-clock:before {
+    content: "\f1ab"
+}
+
+.icon-control-icon-alipay:before {
+    content: "\f1ac"
+}
+
+.icon-control-icon-altimeter:before {
+    content: "\f1ad"
+}
+
+.icon-control-icon-battery-saver:before {
+    content: "\f1ae"
+}
+
+.icon-control-icon-brightness:before {
+    content: "\f1af"
+}
+
+.icon-control-icon-broadcast-hr:before {
+    content: "\f1b0"
+}
+
+.icon-control-icon-contacts:before {
+    content: "\f1b1"
+}
+
+.icon-control-icon-dial-pad:before {
+    content: "\f1b2"
+}
+
+.icon-control-icon-direct-to:before {
+    content: "\f1b3"
+}
+
+.icon-control-icon-do-not-disturb:before {
+    content: "\f1b4"
+}
+
+.icon-control-icon-emergency:before {
+    content: "\f1b5"
+}
+
+.icon-control-icon-find-my-phone:before {
+    content: "\f1b6"
+}
+
+.icon-control-icon-flashlight:before {
+    content: "\f1b7"
+}
+
+.icon-control-icon-hands-free-call:before {
+    content: "\f1b8"
+}
+
+.icon-control-icon-ipass:before {
+    content: "\f1b9"
+}
+
+.icon-control-icon-lock:before {
+    content: "\f1ba"
+}
+
+.icon-control-icon-metar:before {
+    content: "\f1bb"
+}
+
+.icon-control-icon-music-control:before {
+    content: "\f1bc"
+}
+
+.icon-control-icon-phone-control:before {
+    content: "\f1bd"
+}
+
+.icon-control-icon-power:before {
+    content: "\f1be"
+}
+
+.icon-control-icon-save-my-location:before {
+    content: "\f1bf"
+}
+
+.icon-control-icon-set-time-with-gps:before {
+    content: "\f1c0"
+}
+
+.icon-control-icon-stop-watch:before {
+    content: "\f1c1"
+}
+
+.icon-control-icon-sync:before {
+    content: "\f1c2"
+}
+
+.icon-control-icon-timer:before {
+    content: "\f1c3"
+}
+
+.icon-control-icon-virb-remote:before {
+    content: "\f1c4"
+}
+
+.icon-control-icon-voice-assistant:before {
+    content: "\f1c5"
+}
+
+.icon-control-icon-volume:before {
+    content: "\f1c6"
+}
+
+.icon-control-icon-wallet:before {
+    content: "\f1c7"
+}
+
+.icon-control-icon-waypoint:before {
+    content: "\f1c8"
+}
+
+.icon-control-icon-wechatpay:before {
+    content: "\f1c9"
+}
+
+.icon-course-compact:before {
+    content: "\24"
+}
+
+.icon-course-stats:before {
+    content: "\e914"
+}
+
+.icon-courses:before {
+    content: "\301c"
+}
+
+.icon-courses2:before {
+    content: "\e011"
+}
+
+.icon-crash:before {
+    content: "\e905"
+}
+
+.icon-curved-arrow-center:before {
+    content: "\f1ca"
+}
+
+.icon-curved-arrow-left:before {
+    content: "\f1cb"
+}
+
+.icon-curved-arrow-right:before {
+    content: "\f1cc"
+}
+
+.icon-cycle-tracking:before {
+    content: "\f1cd"
+}
+
+.icon-cycling-gravel:before {
+    content: "\f1ce"
+}
+
+.icon-cycling-MTB:before {
+    content: "\f1cf"
+}
+
+.icon-dashboards:before {
+    content: "\e801"
+}
+
+.icon-devices:before {
+    content: "\e014"
+}
+
+.icon-dialogue:before {
+    content: "\e62c"
+}
+
+.icon-dismiss:before {
+    content: "\f1d0"
+}
+
+.icon-download:before {
+    content: "\e605"
+}
+
+.icon-drag-handle:before {
+    content: "\1d356"
+}
+
+.icon-drag:before {
+    content: "\f1d1"
+}
+
+.icon-drawing-method:before {
+    content: "\f1d2"
+}
+
+.icon-driving-directions:before {
+    content: "\f1d3"
+}
+
+.icon-early-morning:before {
+    content: "\e60b"
+}
+
+.icon-ecg-list:before {
+    content: "\f1d4"
+}
+
+.icon-ellipsis-vertical:before {
+    content: "\e620"
+}
+
+.icon-ellipsis:before {
+    content: "\e61f"
+}
+
+.icon-endurance-score:before {
+    content: "\f1d5"
+}
+
+.icon-evening:before {
+    content: "\e607"
+}
+
+.icon-event-logo-default:before {
+    content: "\f1d6"
+}
+
+.icon-external-link:before {
+    content: "\f1d7"
+}
+
+.icon-eye:before {
+    content: "\e604"
+}
+
+.icon-face-happy-gds:before {
+    content: "\f1d8"
+}
+
+.icon-face-indifferent-reversed:before {
+    content: "\e610"
+}
+
+.icon-face-indifferent:before {
+    content: "\e613"
+}
+
+.icon-face-normal-gds:before {
+    content: "\f1d9"
+}
+
+.icon-face-sad-gds:before {
+    content: "\f1da"
+}
+
+.icon-face-sad-reversed:before {
+    content: "\e625"
+}
+
+.icon-face-sad:before {
+    content: "\e624"
+}
+
+.icon-face-super-reversed:before {
+    content: "\e60f"
+}
+
+.icon-face-super:before {
+    content: "\e612"
+}
+
+.icon-face-upset-reversed:before {
+    content: "\e611"
+}
+
+.icon-face-upset:before {
+    content: "\e614"
+}
+
+.icon-face-very-happy-gds:before {
+    content: "\f1db"
+}
+
+.icon-face-very-sad-gds:before {
+    content: "\f1dc"
+}
+
+.icon-facebook-1:before {
+    content: "\f1dd"
+}
+
+.icon-facebook2:before {
+    content: "\e907"
+}
+
+.icon-filter:before {
+    content: "\f1de"
+}
+
+.icon-fitness-age:before {
+    content: "\f1df"
+}
+
+.icon-floors-climbed:before {
+    content: "\e629"
+}
+
+.icon-full-screen-2:before {
+    content: "\e621"
+}
+
+.icon-full-screen:before {
+    content: "\e02c"
+}
+
+.icon-garmin-coach:before {
+    content: "\f1e0"
+}
+
+.icon-gear:before {
+    content: "\e62a"
+}
+
+.icon-goal:before {
+    content: "\f1e1"
+}
+
+.icon-goals:before {
+    content: "\e015"
+}
+
+.icon-golf-ball:before {
+    content: "\e628"
+}
+
+.icon-golf-club:before {
+    content: "\e915"
+}
+
+.icon-golf-leaderboards:before {
+    content: "\f1e2"
+}
+
+.icon-golf-scorecard:before {
+    content: "\e916"
+}
+
+.icon-google-1:before {
+    content: "\f1e3"
+}
+
+.icon-group-admin:before {
+    content: "\f1e4"
+}
+
+.icon-handheld:before {
+    content: "\e90e"
+}
+
+.icon-health-snapshot-list:before {
+    content: "\f1e5"
+}
+
+.icon-heart-inverted:before {
+    content: "\e802"
+}
+
+.icon-heart:before {
+    content: "\e01f"
+}
+
+.icon-heat-acclimation:before {
+    content: "\f1e6"
+}
+
+.icon-help-inverted:before {
+    content: "\e622"
+}
+
+.icon-help:before {
+    content: "\e02f"
+}
+
+.icon-hill-score:before {
+    content: "\f1e7"
+}
+
+.icon-home:before {
+    content: "\f1e8"
+}
+
+.icon-hrv-status-low:before {
+    content: "\f1e9"
+}
+
+.icon-hrv-status-poor:before {
+    content: "\f1ea"
+}
+
+.icon-hrv-status:before {
+    content: "\f1eb"
+}
+
+.icon-hydration-filled:before {
+    content: "\f1ec"
+}
+
+.icon-hydration:before {
+    content: "\f1ed"
+}
+
+.icon-icon_empty_compass:before {
+    content: "\f1ee"
+}
+
+.icon-icon_empty_courses:before {
+    content: "\f1ef"
+}
+
+.icon-icon_empty_star:before {
+    content: "\f1f0"
+}
+
+.icon-icon_solar_charge:before {
+    content: "\f1f1"
+}
+
+.icon-icon-star-hollow:before {
+    content: "\f1f2"
+}
+
+.icon-icon-stress:before {
+    content: "\f1f3"
+}
+
+.icon-inbox:before {
+    content: "\e001"
+}
+
+.icon-info-2:before {
+    content: "\f1f4"
+}
+
+.icon-info-inversed:before {
+    content: "\f1f5"
+}
+
+.icon-info:before {
+    content: "\e01c"
+}
+
+.icon-insights:before {
+    content: "\e902"
+}
+
+.icon-intensity-minutes:before {
+    content: "\e904"
+}
+
+.icon-jetlag-activity:before {
+    content: "\f1f6"
+}
+
+.icon-jetlag-arrive:before {
+    content: "\f1f7"
+}
+
+.icon-jetlag-depart:before {
+    content: "\f1f8"
+}
+
+.icon-jetlag-genesis-inner:before {
+    content: "\f1f9"
+}
+
+.icon-jetlag-genesis:before {
+    content: "\f1fa"
+}
+
+.icon-jetlag-light:before {
+    content: "\f1fb"
+}
+
+.icon-jetlag-sleep:before {
+    content: "\f1fc"
+}
+
+.icon-jump:before {
+    content: "\f1fd"
+}
+
+.icon-kilograms:before {
+    content: "\e90b"
+}
+
+.icon-layers:before {
+    content: "\e60d"
+}
+
+.icon-leaderboard-laurel:before {
+    content: "\f1fe"
+}
+
+.icon-leaderboards:before {
+    content: "\e900"
+}
+
+.icon-link-compact:before {
+    content: "\29c9"
+}
+
+.icon-link:before {
+    content: "\e61e"
+}
+
+.icon-load-focus:before {
+    content: "\f1ff"
+}
+
+.icon-location-arrow:before {
+    content: "\f200"
+}
+
+.icon-location:before {
+    content: "\f201"
+}
+
+.icon-locked:before {
+    content: "\e023"
+}
+
+.icon-manual:before {
+    content: "\e631"
+}
+
+.icon-map-folded:before {
+    content: "\f202"
+}
+
+.icon-marker-border:before {
+    content: "\f203"
+}
+
+.icon-marker-fill:before {
+    content: "\f204"
+}
+
+.icon-marker-shadow:before {
+    content: "\f205"
+}
+
+.icon-megaphone:before {
+    content: "\e615"
+}
+
+.icon-menu:before {
+    content: "\e004"
+}
+
+.icon-MFP:before {
+    content: "\f206"
+}
+
+.icon-minus:before {
+    content: "\e60c"
+}
+
+.icon-morning:before {
+    content: "\e609"
+}
+
+.icon-move:before {
+    content: "\29fe"
+}
+
+.icon-muscle-mass:before {
+    content: "\e636"
+}
+
+.icon-newsfeed:before {
+    content: "\e901"
+}
+
+.icon-note:before {
+    content: "\270f"
+}
+
+.icon-official:before {
+    content: "\f207"
+}
+
+.icon-options:before {
+    content: "\e913"
+}
+
+.icon-pace-pro:before {
+    content: "\f208"
+}
+
+.icon-password-hide:before {
+    content: "\f209"
+}
+
+.icon-password-show:before {
+    content: "\f20a"
+}
+
+.icon-pause:before {
+    content: "\e61d"
+}
+
+.icon-pencil-with-note:before {
+    content: "\e027"
+}
+
+.icon-pencil:before {
+    content: "\e025"
+}
+
+.icon-people-1:before {
+    content: "\e006"
+}
+
+.icon-people-2:before {
+    content: "\e00a"
+}
+
+.icon-people-3:before {
+    content: "\e00c"
+}
+
+.icon-people-4:before {
+    content: "\e603"
+}
+
+.icon-people-5:before {
+    content: "\e602"
+}
+
+.icon-people-what:before {
+    content: "\f20b"
+}
+
+.icon-personal-records:before {
+    content: "\e013"
+}
+
+.icon-photos:before {
+    content: "\f20c"
+}
+
+.icon-pin:before {
+    content: "\f20d"
+}
+
+.icon-placeholder-icon:before {
+    content: "\f20e"
+}
+
+.icon-plus:before {
+    content: "\f20f"
+}
+
+.icon-pointer-down:before {
+    content: "\25bc"
+}
+
+.icon-pointer-left:before {
+    content: "\25c0"
+}
+
+.icon-pointer-right:before {
+    content: "\25b6"
+}
+
+.icon-pointer-up:before {
+    content: "\25b2"
+}
+
+.icon-pounds:before {
+    content: "\e909"
+}
+
+.icon-power-guidance:before {
+    content: "\f210"
+}
+
+.icon-power-sensor:before {
+    content: "\f211"
+}
+
+.icon-pregnancy:before {
+    content: "\f212"
+}
+
+.icon-privacy-connections-and-groups:before {
+    content: "\e600"
+}
+
+.icon-privacy-connections:before {
+    content: "\e601"
+}
+
+.icon-pulse-ox:before {
+    content: "\f213"
+}
+
+.icon-race:before {
+    content: "\2691"
+}
+
+.icon-recurring-compact:before {
+    content: "\e000"
+}
+
+.icon-recurring:before {
+    content: "\21c4"
+}
+
+.icon-redo:before {
+    content: "\f214"
+}
+
+.icon-remove:before {
+    content: "\f215"
+}
+
+.icon-reports-bar:before {
+    content: "\e618"
+}
+
+.icon-reports-line:before {
+    content: "\e619"
+}
+
+.icon-reports-pie:before {
+    content: "\e617"
+}
+
+.icon-reports-scatter:before {
+    content: "\e61b"
+}
+
+.icon-reports:before {
+    content: "\e018"
+}
+
+.icon-respiration:before {
+    content: "\f216"
+}
+
+.icon-runner-tie:before {
+    content: "\e906"
+}
+
+.icon-saved:before {
+    content: "\f217"
+}
+
+.icon-search:before {
+    content: "\e024"
+}
+
+.icon-segments:before {
+    content: "\e016"
+}
+
+.icon-send-to-device:before {
+    content: "\f218"
+}
+
+.icon-shape-circle:before {
+    content: "\f219"
+}
+
+.icon-shape-diamond:before {
+    content: "\f21a"
+}
+
+.icon-shape-open-diamond:before {
+    content: "\f21b"
+}
+
+.icon-shape-open-triangle:before {
+    content: "\f21c"
+}
+
+.icon-shape-square:before {
+    content: "\f21d"
+}
+
+.icon-shape-triangle:before {
+    content: "\f21e"
+}
+
+.icon-share:before {
+    content: "\e021"
+}
+
+.icon-sleep-coach:before {
+    content: "\f21f"
+}
+
+.icon-sleep-legacy:before {
+    content: "\f220"
+}
+
+.icon-sleep-score:before {
+    content: "\f221"
+}
+
+.icon-sleep:before {
+    content: "\e012"
+}
+
+.icon-smartphone:before {
+    content: "\e62f"
+}
+
+.icon-solar-intensity:before {
+    content: "\f222"
+}
+
+.icon-speech-bubble:before {
+    content: "\e01b"
+}
+
+.icon-speech-bubble2:before {
+    content: "\f223"
+}
+
+.icon-star_filled:before {
+    content: "\f224"
+}
+
+.icon-star_outlined:before {
+    content: "\f225"
+}
+
+.icon-star:before {
+    content: "\e01e"
+}
+
+.icon-start-course-here:before {
+    content: "\f226"
+}
+
+.icon-steps-1:before {
+    content: "\e616"
+}
+
+.icon-steps-2:before {
+    content: "\e60e"
+}
+
+.icon-steps:before {
+    content: "\e017"
+}
+
+.icon-steps3:before {
+    content: "\f227"
+}
+
+.icon-stones:before {
+    content: "\e90a"
+}
+
+.icon-stop:before {
+    content: "\f228"
+}
+
+.icon-strava-logo:before {
+    content: "\f229"
+}
+
+.icon-stress:before {
+    content: "\e911"
+}
+
+.icon-sync:before {
+    content: "\e008"
+}
+
+.icon-task:before {
+    content: "\e02b"
+}
+
+.icon-thumb_up-filled:before {
+    content: "\f22a"
+}
+
+.icon-thumb_up:before {
+    content: "\f22b"
+}
+
+.icon-trails-city:before {
+    content: "\f22c"
+}
+
+.icon-trails-park:before {
+    content: "\f22d"
+}
+
+.icon-trails-poi:before {
+    content: "\f22e"
+}
+
+.icon-trails-trail:before {
+    content: "\f22f"
+}
+
+.icon-training-plans:before {
+    content: "\e009"
+}
+
+.icon-training-readiness:before {
+    content: "\f230"
+}
+
+.icon-training-status:before {
+    content: "\f231"
+}
+
+.icon-trash:before {
+    content: "\e020"
+}
+
+.icon-trend-arrow-down:before {
+    content: "\f232"
+}
+
+.icon-trend-arrow-flat:before {
+    content: "\f233"
+}
+
+.icon-trend-arrow-up:before {
+    content: "\f234"
+}
+
+.icon-trend-up:before {
+    content: "\f235"
+}
+
+.icon-twitter2:before {
+    content: "\e908"
+}
+
+.icon-undo:before {
+    content: "\f236"
+}
+
+.icon-unlocked:before {
+    content: "\e022"
+}
+
+.icon-upcoming-events:before {
+    content: "\f237"
+}
+
+.icon-verified:before {
+    content: "\f238"
+}
+
+.icon-video:before {
+    content: "\e632"
+}
+
+.icon-view-map-location:before {
+    content: "\f239"
+}
+
+.icon-vivofit-jr-app:before {
+    content: "\f23a"
+}
+
+.icon-warning:before {
+    content: "\f23b"
+}
+
+.icon-water-bottle:before {
+    content: "\e61a"
+}
+
+.icon-water-percentage:before {
+    content: "\e637"
+}
+
+.icon-weight:before {
+    content: "\2696"
+}
+
+.icon-wi-fi:before {
+    content: "\e630"
+}
+
+.icon-workouts:before {
+    content: "\2686"
+}
+
+.icon-wrench:before {
+    content: "\e910"
+}

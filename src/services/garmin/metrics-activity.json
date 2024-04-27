@@ -1,0 +1,674 @@
+{
+  "running": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directGradeAdjustedSpeed"
+    },
+    {
+      "index": 3,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 4,
+      "key": "directPotentialStamina"
+    },
+    {
+      "index": 5,
+      "key": "directPerformanceCondition"
+    },
+    {
+      "index": 6,
+      "key": "directStrideLength"
+    },
+    {
+      "index": 7,
+      "key": "directDoubleCadence"
+    },
+    {
+      "index": 8,
+      "key": "directPower"
+    },
+    {
+      "index": 9,
+      "key": "directVerticalOscillation"
+    },
+    {
+      "index": 10,
+      "key": "directVerticalRatio"
+    },
+    {
+      "index": 11,
+      "key": "directGroundContactTime"
+    },
+    {
+      "index": 12,
+      "key": "directGroundContactBalanceLeft"
+    },
+    {
+      "index": 13,
+      "key": "directRespirationRate"
+    },
+    {
+      "index": 14,
+      "key": "directAirTemperature"
+    }
+  ],
+  "cycling": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 3,
+      "key": "directPotentialStamina"
+    },
+    {
+      "index": 4,
+      "key": "directPerformanceCondition"
+    },
+    {
+      "index": 5,
+      "key": "directBikeCadence"
+    },
+    {
+      "index": 6,
+      "key": "directTimestamp"
+    },
+    {
+      "index": 7,
+      "key": "directPower"
+    },
+    {
+      "index": 8,
+      "key": "directRightBalance"
+    },
+    {
+      "index": 9,
+      "key": "directLeftPlatformCenterOffset"
+    },
+    {
+      "index": 10,
+      "key": "directRightPlatformCenterOffset"
+    },
+    {
+      "index": 11,
+      "key": "directLeftPowerPhaseStart"
+    },
+    {
+      "index": 12,
+      "key": "directLeftPowerPhasePeakStart"
+    },
+    {
+      "index": 13,
+      "key": "directLeftPowerPhaseEnd"
+    },
+    {
+      "index": 14,
+      "key": "directLeftPowerPhasePeakEnd"
+    },
+    {
+      "index": 15,
+      "key": "directRespirationRate"
+    },
+    {
+      "index": 16,
+      "key": "directAirTemperature"
+    },
+    {
+      "index": 17,
+      "key": "directFlow"
+    },
+    {
+      "index": 18,
+      "key": "directGrit"
+    }
+  ],
+  "fitness_equipment": [
+    {
+      "index": 0,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 1,
+      "key": "directAirTemperature"
+    }
+  ],
+  "swimming": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "weightedMeanSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directSpeed"
+    },
+    {
+      "index": 3,
+      "key": "sumStrokes"
+    },
+    {
+      "index": 4,
+      "key": "weightedMeanSwolf"
+    },
+    {
+      "index": 5,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 6,
+      "key": "directSwimCadence"
+    },
+    {
+      "index": 7,
+      "key": "directAirTemperature"
+    }
+  ],
+  "hiking": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directGradeAdjustedSpeed"
+    },
+    {
+      "index": 3,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 4,
+      "key": "directAirTemperature"
+    }
+  ],
+  "walking": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directGradeAdjustedSpeed"
+    },
+    {
+      "index": 3,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 4,
+      "key": "directAirTemperature"
+    }
+  ],
+  "diving": [
+    {
+      "index": 0,
+      "key": "directDepth"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 3,
+      "key": "directAirTemperature"
+    },
+    {
+      "index": 4,
+      "key": "tankPressure"
+    }
+  ],
+  "water_sports": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directVerticalSpeed"
+    },
+    {
+      "index": 3,
+      "key": "directCurrentStress"
+    },
+    {
+      "index": 4,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 5,
+      "key": "directStrokeCadence"
+    },
+    {
+      "index": 6,
+      "key": "directStrideLength"
+    },
+    {
+      "index": 7,
+      "key": "directPower"
+    },
+    {
+      "index": 8,
+      "key": "directRespirationRate"
+    },
+    {
+      "index": 9,
+      "key": "directAirTemperature"
+    }
+  ],
+  "other": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directVerticalSpeed"
+    },
+    {
+      "index": 3,
+      "key": "directCurrentStress"
+    },
+    {
+      "index": 4,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 5,
+      "key": "directStrokeCadence"
+    },
+    {
+      "index": 6,
+      "key": "directStrideLength"
+    },
+    {
+      "index": 7,
+      "key": "directPower"
+    },
+    {
+      "index": 8,
+      "key": "directRespirationRate"
+    },
+    {
+      "index": 9,
+      "key": "directAirTemperature"
+    }
+  ],
+  "multi_sport": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 2,
+      "key": "directPerformanceCondition"
+    },
+    {
+      "index": 3,
+      "key": "directAirTemperature"
+    }
+  ],
+  "para_sports": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 3,
+      "key": "directWheelchairCadence"
+    },
+    {
+      "index": 4,
+      "key": "directAirTemperature"
+    }
+  ],
+  "transition": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 3,
+      "key": "directStrideLength"
+    },
+    {
+      "index": 4,
+      "key": "directGroundContactTime"
+    },
+    {
+      "index": 5,
+      "key": "directGroundContactBalanceLeft"
+    },
+    {
+      "index": 6,
+      "key": "directAirTemperature"
+    }
+  ],
+  "uncategorized": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    }
+  ],
+  "winter_sports": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directVerticalSpeed"
+    },
+    {
+      "index": 3,
+      "key": "directCurrentStress"
+    },
+    {
+      "index": 4,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 5,
+      "key": "directStrokeCadence"
+    },
+    {
+      "index": 6,
+      "key": "directStrideLength"
+    },
+    {
+      "index": 7,
+      "key": "directPower"
+    },
+    {
+      "index": 8,
+      "key": "directRespirationRate"
+    },
+    {
+      "index": 9,
+      "key": "directAirTemperature"
+    }
+  ],
+  "safety": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directVerticalSpeed"
+    },
+    {
+      "index": 3,
+      "key": "directCurrentStress"
+    },
+    {
+      "index": 4,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 5,
+      "key": "directStrokeCadence"
+    },
+    {
+      "index": 6,
+      "key": "directStrideLength"
+    },
+    {
+      "index": 7,
+      "key": "directPower"
+    },
+    {
+      "index": 8,
+      "key": "directRespirationRate"
+    },
+    {
+      "index": 9,
+      "key": "directAirTemperature"
+    }
+  ],
+  "motorcycling": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 3,
+      "key": "directTimestamp"
+    },
+    {
+      "index": 4,
+      "key": "directAirTemperature"
+    },
+    {
+      "index": 5,
+      "key": "directFlow"
+    },
+    {
+      "index": 6,
+      "key": "directGrit"
+    }
+  ],
+  "indoor_climbing": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directHeartRate"
+    }
+  ],
+  "bouldering": [
+    {
+      "index": 0,
+      "key": "directHeartRate"
+    }
+  ],
+  "e_sport": [
+    {
+      "index": 0,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 1,
+      "key": "directCurrentStress"
+    }
+  ],
+  "meditation": [
+    {
+      "index": 0,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 1,
+      "key": "directCurrentStress"
+    },
+    {
+      "index": 2,
+      "key": "directRespirationRate"
+    }
+  ],
+  "team_sports": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directVerticalSpeed"
+    },
+    {
+      "index": 3,
+      "key": "directCurrentStress"
+    },
+    {
+      "index": 4,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 5,
+      "key": "directStrokeCadence"
+    },
+    {
+      "index": 6,
+      "key": "directStrideLength"
+    },
+    {
+      "index": 7,
+      "key": "directPower"
+    },
+    {
+      "index": 8,
+      "key": "directRespirationRate"
+    },
+    {
+      "index": 9,
+      "key": "directAirTemperature"
+    }
+  ],
+  "racket_sports": [
+    {
+      "index": 0,
+      "key": "directElevation"
+    },
+    {
+      "index": 1,
+      "key": "directSpeed"
+    },
+    {
+      "index": 2,
+      "key": "directVerticalSpeed"
+    },
+    {
+      "index": 3,
+      "key": "directCurrentStress"
+    },
+    {
+      "index": 4,
+      "key": "directHeartRate"
+    },
+    {
+      "index": 5,
+      "key": "directStrokeCadence"
+    },
+    {
+      "index": 6,
+      "key": "directStrideLength"
+    },
+    {
+      "index": 7,
+      "key": "directPower"
+    },
+    {
+      "index": 8,
+      "key": "directRespirationRate"
+    },
+    {
+      "index": 9,
+      "key": "directAirTemperature"
+    }
+  ],
+  "dance": [
+    {
+      "index": 0,
+      "key": "directDoubleCadence"
+    },
+    {
+      "index": 1,
+      "key": "directHeartRate"
+    }
+  ],
+  "jump_rope": [
+    {
+      "index": 0,
+      "key": "directJumpRopeCadence"
+    },
+    {
+      "index": 1,
+      "key": "directHeartRate"
+    }
+  ]
+}
