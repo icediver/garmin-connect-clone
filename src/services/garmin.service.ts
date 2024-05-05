@@ -1,32 +1,37 @@
-import { GarminConnect } from 'garmin-connect';
-import { IGarminTokens } from 'garmin-connect/dist/garmin/types';
 import { kv } from '@vercel/kv';
 import GCClientNew from '@/utils/garmin/gcclient.class';
+import { cookies } from 'next/headers';
+import { IGarminTokens } from '@/garmin-connect/types';
 
-export const initialGarminClient = async () => {
-	// const GCClient = new GarminConnect({
-	// 	username: process.env.GARMIN_USERNAME || '',
-	// 	password: process.env.GARMIN_PASSWORD || '',
-	// });
-	const GCClient = new GCClientNew({
-		username: process.env.GARMIN_USERNAME || '',
-		password: process.env.GARMIN_PASSWORD || '',
-	});
+interface ICredentials {
+	username?: string;
+	password?: string;
+}
 
-	const tokensDbString = (await kv.get('tokens')) as IGarminTokens;
+export const initialGarminClient = async (credentials?: ICredentials) => {
+	const GCClient = new GCClientNew();
 
-	if (tokensDbString.oauth1 && tokensDbString.oauth2) {
+	// const tokensDbString = (await kv.get('tokens')) as IGarminTokens;
+	const tokensDb = cookies().get('auth')?.value;
+
+	const tokensDbString = tokensDb && (JSON.parse(tokensDb) as IGarminTokens);
+
+	if (tokensDbString) {
 		GCClient.loadToken(tokensDbString.oauth1, tokensDbString.oauth2);
 	} else {
 		try {
 			// Uses credentials from garmin.config.json or uses supplied params
-			await GCClient.login();
+			await GCClient.login(credentials?.username, credentials?.password);
 
 			const oauth1 = GCClient.client.oauth1Token;
 			const oauth2 = GCClient.client.oauth2Token;
 			if (oauth1 && oauth2) {
 				// save token
-				await kv.set('tokens', { oauth1, oauth2 });
+				// await kv.set('tokens', { oauth1, oauth2 });
+				cookies().set('auth', JSON.stringify({ oauth1, oauth2 }), {
+					sameSite: 'strict',
+					maxAge: 60 * 60,
+				});
 			}
 		} catch (err: any) {
 			throw err;

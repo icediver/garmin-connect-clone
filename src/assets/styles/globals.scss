@@ -2,8 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 @import 'icons';
+@import 'themes/normal';
+@import 'utils/transitions';
 
 
 body {
 
+}
+.logo {
+    @apply mb-4;
+      margin: 16px 20px;
+      position: relative;
+      // width: 150px;
+      height: 28px;
+      text-indent: -100000px;
+      text-decoration: none;
+      background-color: transparent;
+      background-image: url(/images/logo-sprite-@2x.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 250px;
+  }
+  .logo:before,  .logo:after {
+      content: '';
+      display: block;
+      height: 28px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 250px;
+      background-image: url(/images/logo-sprite-@2x.png);
+      transition: opacity 600ms, width 250ms;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+.auth-logo {
+     margin: 16px 20px;
+      position: relative;
+      // width: 150px;
+      height: 28px;
+      text-indent: -100000px;
+      text-decoration: none;
+      background-color: transparent;
+      background-image: url(/images/logo-sprite-@2x.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 250px;
 }

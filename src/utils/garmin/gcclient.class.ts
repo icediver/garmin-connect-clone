@@ -1,12 +1,13 @@
-import { GarminConnect } from 'garmin-connect';
 import { IActivityLaps } from '@/types/laps.interface';
-import { IActivity } from 'garmin-connect/dist/garmin/types';
+import { IMetricsData } from './types/garmin-metrics.types';
+import { IDaySummary } from './types/garmin-user-summary.types';
+import GarminConnect from '@/garmin-connect/GarminConnect';
 import {
 	ActivitySubType,
 	ActivityType,
-} from 'garmin-connect/dist/garmin/types/activity';
-import { IMetricsData } from './types/garmin-metrics.types';
-import { IDaySummary } from './types/garmin-user-summary.types';
+	IActivity,
+} from '@/garmin-connect/types/activity';
+import { IGarminDevice, IGarminSensor } from './types/devices.interface';
 
 const GARMIN_ACTIVITY_API =
 	'https://connectapi.garmin.com/activity-service/activity';
@@ -14,8 +15,10 @@ const GCA_SEARCH_ACTIVITIES = `https://connectapi.garmin.com/activitylist-servic
 const GCA_USER_SUMMARY =
 	'https://connectapi.garmin.com/usersummary-service/usersummary/daily';
 const GCA_DEVICE_SERVICE =
-	'https://connectapi.garmin.com/device-service/deviceservice/device-info/all';
-
+	'https://connect.garmin.com/device-service/deviceservice/device-info/all';
+const GCA_DEVICES =
+	'https://connectapi.garmin.com/device-service/deviceregistration/devices';
+const GCA_SENSORS = 'https://connectapi.garmin.com/device-service/sensors';
 export default class GCClientNew extends GarminConnect {
 	async getActivityData(activityId: string): Promise<IMetricsData> {
 		const url = `${GARMIN_ACTIVITY_API}/${activityId}/details`;
@@ -72,6 +75,36 @@ export default class GCClientNew extends GarminConnect {
 			},
 		});
 		return daySummary;
+	}
+
+	async getSummaryActivity(activityId: number) {
+		const activity = await this.getActivity({ activityId });
+		const AllDevices = await this.getDevices();
+		const Allsensors = await this.getSensors();
+		const devices = AllDevices.filter(
+			(device) =>
+				device.deviceId === +activity.metadataDTO.deviceMetaDataDTO.deviceId
+		);
+		const activeSensors = activity.metadataDTO.sensors;
+		const sensors: IGarminSensor[] =
+			activeSensors && activeSensors.length > 0
+				? Allsensors.filter((item) =>
+						activeSensors.map((s) => s.serialNumber).includes(item.serialNumber)
+					)
+				: [];
+		return { activity, devices, sensors };
+	}
+
+	async getDevices(displayName?: string): Promise<IGarminDevice[]> {
+		const url = GCA_DEVICES;
+		const deviceInfo = await this.client.get<IGarminDevice[]>(url);
+		return deviceInfo;
+	}
+
+	async getSensors(displayName?: string): Promise<IGarminSensor[]> {
+		const url = GCA_SENSORS;
+		const deviceInfo = await this.client.get<IGarminSensor[]>(url);
+		return deviceInfo;
 	}
 
 	async getLaps(activityId: string) {
