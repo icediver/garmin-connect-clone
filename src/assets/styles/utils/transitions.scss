@@ -11,10 +11,14 @@
         background-color: blue;
         transition: width 300ms ease-in;
       }
+      &:hover:after {
+      width: 100%;
+      background-color: #555;
+    }
 
     }
     .active.border-tabs:after  {
           content: '';
           width: 100%;
     }
-}
+    }

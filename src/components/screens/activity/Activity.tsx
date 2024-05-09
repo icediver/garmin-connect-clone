@@ -8,12 +8,18 @@ import { IActivityDetails } from '@/garmin-connect/types/activity';
 import ActivityChart from '@/components/widgets/activity-chart/ActivityChart';
 import { useEffect } from 'react';
 import { ActivityStatistics } from '@/components/widgets/activity-statistics/ActivityStatistics';
+import { Device } from '@/components/widgets/device/Device';
+import { ISummaryActivity } from '@/utils/garmin/types/summary.interface';
+import { Sensors } from '@/components/widgets/sensors/Sensors';
+import { SmallStats } from '@/components/widgets/small-stats/SmallStats';
+import { ActivityHeader } from './ActivityHeader';
+import { act } from 'react-dom/test-utils';
 
 interface IActivity {
 	metricsData: IMetricsData;
 	activityData: IActivityDetails;
 	laps?: IActivityLaps;
-	summary: any;
+	summary: ISummaryActivity;
 }
 const DynamicMap = dynamic(
 	() => import('../../widgets/activity-map/ActivityMap'),
@@ -41,11 +47,12 @@ const dataMetrics: IMetric[] = [
 
 export default function Activity({
 	metricsData,
-	activityData,
+	// activityData,
 	laps,
 	summary,
 }: IActivity) {
-	const icon = getActivityIcon(activityData.activityTypeDTO.typeKey);
+	const { activity, gears, course, devices, sensors } = summary;
+	const icon = getActivityIcon(activity.activityTypeDTO.typeKey);
 
 	//ignore recharts error
 	const error = console.error;
@@ -59,25 +66,44 @@ export default function Activity({
 	}, [summary]);
 
 	return (
-		<div className="w-[1035px] p-6">
-			<div className="flex">
-				<div className="h-20 w-20">
-					<i className={`activity-type-icon ${icon}`} />
+		<div className="">
+			<ActivityHeader
+				icon={icon}
+				activityName={activity.activityName}
+				type={activity.activityTypeDTO.typeKey}
+				userName={activity.metadataDTO.userInfoDto.fullname}
+				eventType={activity.eventTypeDTO.typeKey}
+				date={activity.summaryDTO.startTimeLocal}
+				event={activity.metadataDTO.calendarEventInfo || '--'}
+				gear={gears}
+				course={course ? course.name : '-'}
+			/>
+			<div className="grid grid-cols-10">
+				<div className="col-span-7 p-6">
+					<SmallStats activityData={activity} />
+					{activity.metadataDTO.hasPolyline && (
+						<div className="h-[345px]">
+							<DynamicMap data={metricsData} />
+						</div>
+					)}
+					{/*
+           TODO: Check ActivityChart for all metrics
+*/}
+					{dataMetrics.map((metric) => (
+						<ActivityChart
+							key={metric.key}
+							activityData={metricsData}
+							metricDescriptorKey={metric.key}
+							color={metric.color}
+						/>
+					))}
+					<ActivityStatistics props={activity} />
 				</div>
-				<span className="text-3xl font-thin">{activityData.activityName}</span>
+				<div className="col-span-3 py-6">
+					<Device {...summary} />
+					<Sensors {...summary} />
+				</div>
 			</div>
-			<div className="h-[345px]">
-				<DynamicMap data={metricsData} />
-			</div>
-			{dataMetrics.map((metric) => (
-				<ActivityChart
-					key={metric.key}
-					activityData={metricsData}
-					metricDescriptorKey={metric.key}
-					color={metric.color}
-				/>
-			))}
-			<ActivityStatistics props={activityData} />
 		</div>
 	);
 }

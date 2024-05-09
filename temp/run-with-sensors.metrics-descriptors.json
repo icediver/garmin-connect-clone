@@ -1,0 +1,65 @@
+[
+    {
+        "metricsIndex": 0,
+        "key": "directTimestamp",
+        "unit": {
+            "id": 120,
+            "key": "gmt",
+            "factor": 0
+        }
+    },
+    {
+        "metricsIndex": 1,
+        "key": "directHeartRate",
+        "unit": {
+            "id": 100,
+            "key": "bpm",
+            "factor": 1
+        }
+    },
+    {
+        "metricsIndex": 2,
+        "key": "sumMovingDuration",
+        "unit": {
+            "id": 40,
+            "key": "second",
+            "factor": 1000
+        }
+    },
+    {
+        "metricsIndex": 3,
+        "key": "sumElapsedDuration",
+        "unit": {
+            "id": 40,
+            "key": "second",
+            "factor": 1000
+        }
+    },
+    {
+        "metricsIndex": 4,
+        "key": "sumDuration",
+        "unit": {
+            "id": 40,
+            "key": "second",
+            "factor": 1000
+        }
+    },
+    {
+        "metricsIndex": 5,
+        "key": "sumDistance",
+        "unit": {
+            "id": 1,
+            "key": "meter",
+            "factor": 100
+        }
+    },
+    {
+        "metricsIndex": 6,
+        "key": "directAirTemperature",
+        "unit": {
+            "id": 227,
+            "key": "celcius",
+            "factor": 1
+        }
+    }
+]

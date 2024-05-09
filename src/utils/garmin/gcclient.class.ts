@@ -6,8 +6,12 @@ import {
 	ActivitySubType,
 	ActivityType,
 	IActivity,
+	IActivityDetails,
 } from '@/garmin-connect/types/activity';
 import { IGarminDevice, IGarminSensor } from './types/devices.interface';
+import { ISummaryActivity } from './types/summary.interface';
+import { ICourse } from '@/garmin-connect/types/course.type';
+import { IGear } from '@/garmin-connect/types/gear.type';
 
 const GARMIN_ACTIVITY_API =
 	'https://connectapi.garmin.com/activity-service/activity';
@@ -19,6 +23,13 @@ const GCA_DEVICE_SERVICE =
 const GCA_DEVICES =
 	'https://connectapi.garmin.com/device-service/deviceregistration/devices';
 const GCA_SENSORS = 'https://connectapi.garmin.com/device-service/sensors';
+const GCA_ACTIVITY_CHARTS_ORDER =
+	'https://connect.garmin.com/web-data/activity-charts-order/activity-charts-order-master.json';
+const GCA_COURSE =
+	'https://connectapi.garmin.com/course-service/course/metadata';
+const GCA_GEAR_SERVICE =
+	'https://connectapi.garmin.com/gear-service/gear/filterGear?activityId=';
+
 export default class GCClientNew extends GarminConnect {
 	async getActivityData(activityId: string): Promise<IMetricsData> {
 		const url = `${GARMIN_ACTIVITY_API}/${activityId}/details`;
@@ -77,7 +88,7 @@ export default class GCClientNew extends GarminConnect {
 		return daySummary;
 	}
 
-	async getSummaryActivity(activityId: number) {
+	async getSummaryActivity(activityId: number): Promise<ISummaryActivity> {
 		const activity = await this.getActivity({ activityId });
 		const AllDevices = await this.getDevices();
 		const Allsensors = await this.getSensors();
@@ -92,10 +103,13 @@ export default class GCClientNew extends GarminConnect {
 						activeSensors.map((s) => s.serialNumber).includes(item.serialNumber)
 					)
 				: [];
-		return { activity, devices, sensors };
+		const courseId = activity.metadataDTO.associatedCourseId;
+		const course = courseId ? await this.getCourse(courseId) : null;
+		const gears = (await this.getGears(activityId)) || null;
+		return { activity, devices, sensors, course, gears };
 	}
 
-	async getDevices(displayName?: string): Promise<IGarminDevice[]> {
+	async getDevices(): Promise<IGarminDevice[]> {
 		const url = GCA_DEVICES;
 		const deviceInfo = await this.client.get<IGarminDevice[]>(url);
 		return deviceInfo;
@@ -105,6 +119,24 @@ export default class GCClientNew extends GarminConnect {
 		const url = GCA_SENSORS;
 		const deviceInfo = await this.client.get<IGarminSensor[]>(url);
 		return deviceInfo;
+	}
+
+	async getChartsOrder() {
+		const url = GCA_ACTIVITY_CHARTS_ORDER;
+		const chartsOrder = await this.client.get(url);
+		return chartsOrder;
+	}
+
+	async getCourse(courseId: string | number): Promise<ICourse> {
+		const url = `${GCA_COURSE}/${courseId}`;
+		const course = await this.client.get<ICourse>(url);
+		return course;
+	}
+
+	async getGears(activityId: number): Promise<IGear[]> {
+		const url = GCA_GEAR_SERVICE + activityId;
+		const gears = await this.client.get<IGear[]>(url);
+		return gears;
 	}
 
 	async getLaps(activityId: string) {

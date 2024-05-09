@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ['localhost', 's3.amazonaws.com'],
+		domains: ['localhost', 's3.amazonaws.com', 'static.garmincdn.com'],
 	},
 	env: {
 		GARMIN_USERNAME: process.env.GARMIN_USERNAME,

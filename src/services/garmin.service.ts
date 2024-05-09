@@ -30,7 +30,7 @@ export const initialGarminClient = async (credentials?: ICredentials) => {
 				// await kv.set('tokens', { oauth1, oauth2 });
 				cookies().set('auth', JSON.stringify({ oauth1, oauth2 }), {
 					sameSite: 'strict',
-					maxAge: 60 * 60,
+					maxAge: 60 * 60 * 24,
 				});
 			}
 		} catch (err: any) {

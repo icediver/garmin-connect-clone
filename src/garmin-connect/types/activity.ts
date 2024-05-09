@@ -81,7 +81,7 @@ export interface IActivity {
 	activityLikeProfileImageUrls: unknown;
 	requestorRelationship: unknown;
 	userRoles: string[];
-	privacy: { typeId: number; typeKey: string };
+	privacy: IPrivacyRule;
 	userPro: boolean;
 	courseId: unknown;
 	poolLength: unknown;
@@ -236,14 +236,7 @@ export interface IActivityDetails {
 	activityName: string;
 	userProfileId: number;
 	isMultiSportParent: boolean;
-	activityTypeDTO: {
-		typeId: number;
-		typeKey: string;
-		parentTypeId: number;
-		isHidden: boolean;
-		restricted: boolean;
-		trimmable: boolean;
-	};
+	activityTypeDTO: IActivityTypeDTO;
 	eventTypeDTO: {
 		typeId: number;
 		typeKey: string;
@@ -327,7 +320,7 @@ export interface IActivityDetails {
 		eBikeBatteryUsage?: null;
 		eBikeBatteryRemaining?: null;
 		eBikeAssistModeInfoDTOList?: null;
-		calendarEventInfo?: null;
+		calendarEventInfo?: null | string;
 		personalRecord: boolean;
 		gcj02: boolean;
 		runPowerWindDataEnabled?: null;
@@ -337,44 +330,7 @@ export interface IActivityDetails {
 		trimmed: boolean;
 		elevationCorrected: boolean;
 	};
-	summaryDTO: {
-		startTimeLocal: string;
-		startTimeGMT: string;
-		startLatitude: number;
-		startLongitude: number;
-		distance: number;
-		duration: number;
-		movingDuration: number;
-		elapsedDuration: number;
-		elevationGain: number;
-		elevationLoss: number;
-		maxElevation: number;
-		minElevation: number;
-		averageSpeed: number;
-		averageMovingSpeed: number;
-		maxSpeed: number;
-		calories: number;
-		averageHR: number;
-		maxHR: number;
-		averageRunCadence: number;
-		maxRunCadence: number;
-		averageTemperature: number;
-		maxTemperature: number;
-		minTemperature: number;
-		groundContactTime: number;
-		groundContactBalanceLeft: number;
-		strideLength: number;
-		verticalOscillation: number;
-		trainingEffect: number;
-		anaerobicTrainingEffect: number;
-		aerobicTrainingEffectMessage: string;
-		anaerobicTrainingEffectMessage: string;
-		verticalRatio: number;
-		endLatitude: number;
-		endLongitude: number;
-		maxVerticalSpeed: number;
-		minActivityLapDuration: number;
-	};
+	summaryDTO: ISummaryDTO;
 	locationName: string;
 	splitSummaries?:
 		| {
@@ -408,4 +364,96 @@ export interface IActivityDetails {
 				maxDistance: number;
 		  }[]
 		| null;
+}
+
+export interface ISummaryDTO {
+	startTimeLocal: string;
+	startTimeGMT: string;
+	startLatitude: number;
+	startLongitude: number;
+	distance: number;
+	duration: number;
+	movingDuration: number;
+	elapsedDuration: number;
+	elevationGain: number;
+	elevationLoss: number;
+	maxElevation: number;
+	minElevation: number;
+	averageSpeed: number;
+	averageMovingSpeed: number;
+	maxSpeed: number;
+	calories: number;
+	bmrCalories: number;
+	averageHR: number;
+	maxHR: number;
+	averageTemperature: number;
+	maxTemperature: number;
+	minTemperature: number;
+	trainingEffect: number;
+	anaerobicTrainingEffect: number;
+	aerobicTrainingEffectMessage: string;
+	anaerobicTrainingEffectMessage: string;
+	endLatitude: number;
+	endLongitude: number;
+	maxVerticalSpeed: number;
+	minActivityLapDuration: number;
+	waterEstimated: number;
+
+	averageRunCadence?: number;
+	maxRunCadence?: number;
+	groundContactTime?: number;
+	groundContactBalanceLeft?: number;
+	strideLength?: number;
+	verticalOscillation?: number;
+
+	verticalRatio?: number;
+	minRespirationRate?: number;
+	maxRespirationRate?: number;
+	avgRespirationRate?: number;
+	moderateIntensityMinutes?: number;
+	vigorousIntensityMinutes?: number;
+	steps?: number;
+
+	averageBikeCadence?: number;
+	maxBikeCadence?: number;
+	totalNumberOfStrokes?: number;
+
+	averageSwimCadence?: number;
+	maxSwimCadence?: number;
+	averageSWOLF?: number;
+	averageStrokeDistance?: number;
+	recoveryHeartRate?: number;
+
+	poolLength: number;
+	numberOfActiveLengths?: number;
+	unitOfPoolLength?: {
+		unitId: number;
+		unitKey: string;
+		factor: number;
+	};
+	averageStrokes?: number;
+
+	averagePower?: number;
+	maxPower?: number;
+	minPower?: number;
+	normalizedPower?: number;
+	functionalThresholdPower?: number;
+	totalWork?: number;
+	trainingStressScore?: number;
+	intensityFactor?: number;
+	avgVerticalSpeed: number;
+	avgElapsedDurationVerticalSpeed?: number;
+}
+export interface IActivityTypeDTO {
+	typeId: number;
+	typeKey: string;
+	parentTypeId: number;
+	isHidden: boolean;
+	restricted: boolean;
+	trimmable: boolean;
+}
+
+export interface IPrivacyRule {
+	typeId: number;
+	typeKey: string;
 }

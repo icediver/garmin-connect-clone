@@ -23,8 +23,10 @@ export default async function Page({
 	});
 	const laps = await GCClient.getLaps(activityId);
 	const summary = await GCClient.getSummaryActivity(+activityId);
+	const charts = await GCClient.getChartsOrder();
 	// console.log('laps', laps);
 	// console.log(devices);
+	console.log(charts);
 
 	return (
 		<div>

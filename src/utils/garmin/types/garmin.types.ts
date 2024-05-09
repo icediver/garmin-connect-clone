@@ -1,4 +1,4 @@
-import { IActivity } from 'garmin-connect/dist/garmin/types';
+import { IActivity } from '@/garmin-connect/types/activity';
 
 export interface ITokens {
 	oauthToken: string;

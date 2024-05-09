@@ -1,0 +1,161 @@
+{
+	"activityId": 6903543970,
+	"activityUUID": {
+		"uuid": "9f3d1b04-36b6-41c8-91b7-65f76607d2b4"
+	},
+	"activityName": "Боровский район Велосипед",
+	"userProfileId": 83627312,
+	"isMultiSportParent": false,
+	"activityTypeDTO": {
+		"typeId": 2,
+		"typeKey": "cycling",
+		"parentTypeId": 17,
+		"isHidden": false,
+		"restricted": false,
+		"trimmable": true
+	},
+	"eventTypeDTO": {
+		"typeId": 9,
+		"typeKey": "uncategorized",
+		"sortOrder": 10
+	},
+	"accessControlRuleDTO": {
+		"typeId": 2,
+		"typeKey": "private"
+	},
+	"timeZoneUnitDTO": {
+		"unitId": 166,
+		"unitKey": "Europe/Moscow",
+		"factor": 0,
+		"timeZone": "Europe/Moscow"
+	},
+	"metadataDTO": {
+		"isOriginal": true,
+		"deviceApplicationInstallationId": 887710,
+		"agentApplicationInstallationId": null,
+		"agentString": null,
+		"fileFormat": {
+			"formatId": 7,
+			"formatKey": "fit"
+		},
+		"associatedCourseId": 55334879,
+		"lastUpdateDate": "2021-06-06T16:59:22.0",
+		"uploadedDate": "2021-06-05T12:41:43.0",
+		"videoUrl": null,
+		"hasPolyline": true,
+		"hasChartData": true,
+		"hasHrTimeInZones": true,
+		"hasPowerTimeInZones": false,
+		"userInfoDto": {
+			"userProfilePk": 83627312,
+			"displayname": "f0eda024-5e61-4023-9474-f142b7202851",
+			"fullname": "IceDiver",
+			"profileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/71cb98d6-c901-45e4-b85d-68797adb68be-83627312.png",
+			"profileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/f200dc87-fb52-4bfd-ad45-3165040ca5db-83627312.png",
+			"profileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/15e35e36-30b3-4dcf-ac0a-7303d6a4838d-83627312.png",
+			"userPro": false
+		},
+		"childIds": [],
+		"childActivityTypes": [],
+		"sensors": [
+			{
+				"manufacturer": "MAGENE",
+				"serialNumber": 116066027,
+				"sourceType": "ANTPLUS",
+				"antplusDeviceType": "BIKE_CADENCE",
+				"softwareVersion": 0.4,
+				"batteryStatus": "OK"
+			},
+			{
+				"manufacturer": "GARMIN",
+				"serialNumber": 3333223740,
+				"sku": "006-B1743-00",
+				"fitProductNumber": 1743,
+				"sourceType": "ANTPLUS",
+				"antplusDeviceType": "HEART_RATE",
+				"softwareVersion": 4.3,
+				"batteryStatus": "OK"
+			},
+			{
+				"manufacturer": "MAGENE",
+				"serialNumber": 2800658158,
+				"sourceType": "ANTPLUS",
+				"antplusDeviceType": "BIKE_SPEED",
+				"softwareVersion": 0.4,
+				"batteryStatus": "OK"
+			}
+		],
+		"activityImages": [],
+		"manufacturer": "GARMIN",
+		"diveNumber": null,
+		"lapCount": 27,
+		"associatedWorkoutId": null,
+		"isAtpActivity": null,
+		"deviceMetaDataDTO": {
+			"deviceId": "3314175480",
+			"deviceTypePk": 36822,
+			"deviceVersionPk": 887710
+		},
+		"hasIntensityIntervals": false,
+		"hasSplits": false,
+		"eBikeMaxAssistModes": null,
+		"eBikeBatteryUsage": null,
+		"eBikeBatteryRemaining": null,
+		"eBikeAssistModeInfoDTOList": null,
+		"hasRunPowerWindData": null,
+		"calendarEventInfo": null,
+		"groupRideUUID": null,
+		"liveTrackPlusSessionUUIDs": null,
+		"curatedCourseId": null,
+		"matchedCuratedCourseId": null,
+		"personalRecord": true,
+		"gcj02": false,
+		"runPowerWindDataEnabled": null,
+		"autoCalcCalories": false,
+		"favorite": false,
+		"manualActivity": false,
+		"trimmed": false,
+		"elevationCorrected": false
+	},
+	"summaryDTO": {
+		"startTimeLocal": "2021-06-05T08:04:12.0",
+		"startTimeGMT": "2021-06-05T05:04:12.0",
+		"startLatitude": 55.17291069030762,
+		"startLongitude": 36.43140292726457,
+		"distance": 132315.08,
+		"duration": 23776.918,
+		"movingDuration": 23702.01,
+		"elapsedDuration": 27143.947,
+		"elevationGain": 936,
+		"elevationLoss": 935.98,
+		"maxElevation": 225.6,
+		"minElevation": 139.6,
+		"averageSpeed": 5.565000057220459,
+		"averageMovingSpeed": 5.582441238970196,
+		"maxSpeed": 12.998000144958496,
+		"calories": 1621,
+		"averageHR": 107,
+		"maxHR": 149,
+		"averageBikeCadence": 66,
+		"maxBikeCadence": 131,
+		"averageTemperature": 26.12158105846661,
+		"maxTemperature": 31,
+		"minTemperature": 22,
+		"trainingEffect": 2.4000000953674316,
+		"anaerobicTrainingEffect": 0.30000001192092896,
+		"aerobicTrainingEffectMessage": "MAINTAINING_AEROBIC_BASE_7",
+		"anaerobicTrainingEffectMessage": "NO_ANAEROBIC_BENEFIT_0",
+		"totalNumberOfStrokes": 23347,
+		"endLatitude": 55.151127465069294,
+		"endLongitude": 36.477554524317384,
+		"maxVerticalSpeed": 6.000000000000001,
+		"waterEstimated": 4263,
+		"minRespirationRate": 12.859999656677246,
+		"maxRespirationRate": 40.970001220703125,
+		"avgRespirationRate": 24.610000610351562,
+		"trainingEffectLabel": "AEROBIC_BASE",
+		"activityTrainingLoad": 56.81355285644531,
+		"minActivityLapDuration": 700.419
+	},
+	"locationName": "Боровский район"
+}

@@ -1,0 +1,126 @@
+{
+	"activityId": 9367550565,
+	"activityUUID": {
+		"uuid": "d6b8c433-57d0-48c0-8743-4d26ffa292a5"
+	},
+	"activityName": "Плавание в бассейне",
+	"userProfileId": 83627312,
+	"isMultiSportParent": false,
+	"activityTypeDTO": {
+		"typeId": 27,
+		"typeKey": "lap_swimming",
+		"parentTypeId": 26,
+		"isHidden": false,
+		"restricted": false,
+		"trimmable": false
+	},
+	"eventTypeDTO": {
+		"typeId": 9,
+		"typeKey": "uncategorized",
+		"sortOrder": 10
+	},
+	"accessControlRuleDTO": {
+		"typeId": 2,
+		"typeKey": "private"
+	},
+	"timeZoneUnitDTO": {
+		"unitId": 144,
+		"unitKey": "Africa/Johannesburg",
+		"factor": 0,
+		"timeZone": "Africa/Johannesburg"
+	},
+	"metadataDTO": {
+		"isOriginal": true,
+		"deviceApplicationInstallationId": 903122,
+		"agentApplicationInstallationId": null,
+		"agentString": null,
+		"fileFormat": {
+			"formatId": 7,
+			"formatKey": "fit"
+		},
+		"associatedCourseId": null,
+		"lastUpdateDate": "2022-08-09T10:25:27.0",
+		"uploadedDate": "2022-08-09T10:25:27.0",
+		"videoUrl": null,
+		"hasPolyline": false,
+		"hasChartData": true,
+		"hasHrTimeInZones": true,
+		"hasPowerTimeInZones": false,
+		"userInfoDto": {
+			"userProfilePk": 83627312,
+			"displayname": "f0eda024-5e61-4023-9474-f142b7202851",
+			"fullname": "IceDiver",
+			"profileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/71cb98d6-c901-45e4-b85d-68797adb68be-83627312.png",
+			"profileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/f200dc87-fb52-4bfd-ad45-3165040ca5db-83627312.png",
+			"profileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/15e35e36-30b3-4dcf-ac0a-7303d6a4838d-83627312.png",
+			"userPro": false
+		},
+		"childIds": [],
+		"childActivityTypes": [],
+		"sensors": [],
+		"activityImages": [],
+		"manufacturer": "GARMIN",
+		"diveNumber": null,
+		"lapCount": 2,
+		"associatedWorkoutId": null,
+		"isAtpActivity": null,
+		"deviceMetaDataDTO": {
+			"deviceId": "3314175480",
+			"deviceTypePk": 36822,
+			"deviceVersionPk": 903122
+		},
+		"hasIntensityIntervals": false,
+		"hasSplits": false,
+		"eBikeMaxAssistModes": null,
+		"eBikeBatteryUsage": null,
+		"eBikeBatteryRemaining": null,
+		"eBikeAssistModeInfoDTOList": null,
+		"hasRunPowerWindData": null,
+		"calendarEventInfo": null,
+		"groupRideUUID": null,
+		"liveTrackPlusSessionUUIDs": null,
+		"curatedCourseId": null,
+		"matchedCuratedCourseId": null,
+		"gcj02": false,
+		"personalRecord": false,
+		"autoCalcCalories": false,
+		"favorite": false,
+		"runPowerWindDataEnabled": null,
+		"manualActivity": false,
+		"trimmed": false,
+		"elevationCorrected": false
+	},
+	"summaryDTO": {
+		"startTimeLocal": "2022-08-09T11:42:13.0",
+		"startTimeGMT": "2022-08-09T09:42:13.0",
+		"distance": 1050,
+		"duration": 2463.51,
+		"movingDuration": 1074.456,
+		"elapsedDuration": 2576.031,
+		"averageSpeed": 0.9769999980926514,
+		"maxSpeed": 3.053999900817871,
+		"calories": 234,
+		"bmrCalories": 51,
+		"averageHR": 63,
+		"maxHR": 94,
+		"averageSwimCadence": 25,
+		"trainingEffect": 0,
+		"anaerobicTrainingEffect": 0,
+		"aerobicTrainingEffectMessage": "NO_AEROBIC_BENEFIT_18",
+		"anaerobicTrainingEffectMessage": "NO_ANAEROBIC_BENEFIT_0",
+		"poolLength": 25,
+		"numberOfActiveLengths": 42,
+		"unitOfPoolLength": {
+			"unitId": 1,
+			"unitKey": "meter",
+			"factor": 100
+		},
+		"totalNumberOfStrokes": 452,
+		"averageStrokes": 10.800000190734863,
+		"averageSWOLF": 36,
+		"averageStrokeDistance": 0,
+		"trainingEffectLabel": "UNKNOWN",
+		"activityTrainingLoad": 1.03668212890625,
+		"minActivityLapDuration": 128.057
+	}
+}
