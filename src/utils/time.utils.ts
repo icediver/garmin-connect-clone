@@ -1,7 +1,6 @@
-import {
-	IActivityData,
-	IMetricsData,
-} from '@/services/garmin/activity-details.types';
+import { IMetricsForChart } from '@/components/widgets/activity-chart/ActivityChart';
+import { TypeMetricForChart } from '@/components/widgets/activity-chart/metric.interface';
+import { IMetricsData } from '@/utils/garmin/types/garmin-metrics.types';
 
 export enum EnumMetricType {
 	directHeartRate = 'heart rate',
@@ -27,7 +26,7 @@ export function secondsToTime(seconds: number) {
 export function getDataChartActivity(
 	activityData: IMetricsData,
 	metricDescriptorKey: TypeMetricKey
-) {
+): IMetricsForChart[] {
 	const metricIndex = activityData.metricDescriptors.filter(
 		(item) => item.key === metricDescriptorKey
 	)[0].metricsIndex;
@@ -36,21 +35,27 @@ export function getDataChartActivity(
 		(item) => item.key === 'directTimestamp'
 	)[0].metricsIndex;
 
-	const newArr = activityData.activityDetailMetrics.map((item, index) => {
-		const timesince =
-			(Number(item.metrics[timestampMetricIndex]) -
-				Number(
-					activityData.activityDetailMetrics[0].metrics[timestampMetricIndex]
-				)) /
-			1000;
-		return {
-			[metricDescriptorKey]:
-				metricDescriptorKey === 'directSpeed'
-					? (Number(item.metrics[metricIndex]) * 3.6).toFixed(1)
-					: item.metrics[metricIndex]?.toFixed(),
-			timestamp: secondsToTime(timesince),
-		};
-	});
+	const newArr: TypeMetricForChart[] = activityData.activityDetailMetrics.map(
+		(item, index) => {
+			const timesince =
+				(Number(item.metrics[timestampMetricIndex]) -
+					Number(
+						activityData.activityDetailMetrics[0].metrics[timestampMetricIndex]
+					)) /
+				1000;
+			const metric = item.metrics[metricIndex];
+			return {
+				[metricDescriptorKey]: Number(
+					metric
+						? metricDescriptorKey === 'directSpeed'
+							? (metric * 3.6).toFixed(1)
+							: metric.toFixed()
+						: 0
+				),
+				timestamp: secondsToTime(timesince),
+			};
+		}
+	);
 
 	return newArr;
 }

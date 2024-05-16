@@ -26,7 +26,7 @@ export default async function Page({
 	const charts = await GCClient.getChartsOrder();
 	// console.log('laps', laps);
 	// console.log(devices);
-	console.log(charts);
+	// console.log(charts);
 
 	return (
 		<div>

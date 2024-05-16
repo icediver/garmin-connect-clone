@@ -10,16 +10,13 @@ import {
 	Area,
 	AreaChart,
 	CartesianGrid,
-	Legend,
 	ResponsiveContainer,
 	Tooltip,
 	XAxis,
 	YAxis,
 } from 'recharts';
-interface IMetricsForChart {
-	[key: string]: number;
-	timestamp: number;
-}
+import { TypeMetricForChart } from './metric.interface';
+
 interface IActivity {
 	activityData: IMetricsData;
 	metricDescriptorKey: TypeMetricKey;
@@ -30,13 +27,17 @@ export default function ActivityChart({
 	metricDescriptorKey,
 	color,
 }: IActivity) {
-	const newArr: IMetricsForChart[] = getDataChartActivity(
+	const newArr: TypeMetricForChart[] = getDataChartActivity(
 		activityData,
 		metricDescriptorKey
 	);
 	// console.log(newArr[newArr.length - 1].timestamp);
-	const max = Math.max(...newArr.map((item) => item[metricDescriptorKey]));
-	const min = Math.min(...newArr.map((item) => item[metricDescriptorKey]));
+	const max = Math.max(...newArr.map((item) => +item[metricDescriptorKey]));
+	const min = Math.min(...newArr.map((item) => +item[metricDescriptorKey]));
+
+	if (metricDescriptorKey === 'directHeartRate') {
+		newArr.map((item) => item[metricDescriptorKey]);
+	}
 
 	return (
 		<div className="my-8 h-[130px] w-full">
