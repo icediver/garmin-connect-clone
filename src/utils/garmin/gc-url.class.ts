@@ -11,11 +11,13 @@ export class GCUrl {
 		this.GC_API_URL = `https://connectapi.${this.domain}`;
 	}
 	get GC_ACTIVITY() {
-		return `${this.GC_API_URL}/activity-service/activity`;
+		return new URL(`${this.GC_API_URL}/activity-service/activity`);
 	}
 
 	get GC_ACTIVITIES() {
-		return `${this.GC_API_URL}/activitylist-service/activities/search/activities`;
+		return new URL(
+			`${this.GC_API_URL}/activitylist-service/activities/search/activities`
+		);
 	}
 
 	get GC_USER_SUMMARY() {
@@ -40,5 +42,9 @@ export class GCUrl {
 
 	get GC_GEAR_SERVICE() {
 		return `${this.GC_API_URL}/gear-service/gear/filterGear?activityId=`;
+	}
+
+	get GC_ACTIVITY_TYPES() {
+		return `${this.GC_API_URL}/activity-service/activity/activityTypes`;
 	}
 }

@@ -318,3 +318,12 @@ export interface ActivityTypeDTO {
 export interface ActivityUUID {
 	uuid: string;
 }
+
+export interface IActivityTypes {
+	typeId: number;
+	typeKey: string;
+	parentTypeId: number;
+	isHidden: boolean;
+	restricted: boolean;
+	trimmable: boolean;
+}

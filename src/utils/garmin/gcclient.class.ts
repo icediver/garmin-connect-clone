@@ -14,6 +14,7 @@ import { ICourse } from '@/garmin-connect/types/course.type';
 import { IGear } from '@/garmin-connect/types/gear.type';
 import { GCUrl } from './gc-url.class';
 import { GarminDomain } from '@/garmin-connect/types';
+import { IActivityTypes } from './types/garmin.types';
 
 export default class GCClientNew extends GarminConnect {
 	private gcUrl: GCUrl;
@@ -23,7 +24,7 @@ export default class GCClientNew extends GarminConnect {
 	}
 
 	async getActivityData(activityId: string): Promise<IMetricsData> {
-		const url = `${this.gcUrl.GC_ACTIVITY}/${activityId}/details`;
+		const url = `${this.gcUrl.GC_ACTIVITY.href}/${activityId}/details`;
 		const fileBufer = await this.client.get<IMetricsData>(url, {
 			params: {
 				maxChartSize: 2000,
@@ -142,5 +143,11 @@ export default class GCClientNew extends GarminConnect {
 		const url = `${this.gcUrl.GC_ACTIVITY}/${activityId}/timeinzones`;
 		const timeInZones: IMetricsData = await this.client.get(url);
 		return timeInZones;
+	}
+	async getActivityTypes() {
+		const url = `${this.gcUrl.GC_ACTIVITY_TYPES}`;
+
+		const activityTypes: IActivityTypes[] = await this.client.get(url);
+		return activityTypes;
 	}
 }
